@@ -1,5 +1,5 @@
 //var various = null;
-var aishah = null;
+var usctwidows1 = null;
 var hafsah54 = null;
 var ramlah59 = null;
 var umsalamah56 = null;
@@ -42,10 +42,10 @@ $(function () {
     dataType: 'json'
   }); */
 
-  aishahgraph = $.ajax({ 
-    url: 'data/aishah_53.json',
+  usctwidows1graph = $.ajax({ 
+    url: 'data/usctwidows1.cyjs',
     type: 'GET',
-    dataType: 'json'
+    dataType: 'cyjs'
   });
 
   hafsah54graph = $.ajax({ //ayah testing
@@ -345,8 +345,8 @@ $(function () {
     /*if (various == null) {
       various = variousgraph['responseJSON'];
     } */
-    if (aishah == null) {
-      aishah = aishahgraph['responseJSON'];
+    if (usctwidows1 == null) {
+      usctwidows1 = usctwidows1graph['responseJSON'];
     }
     if (hafsah54 == null) {
       hafsah54 = hafsah54graph['responseJSON'];
