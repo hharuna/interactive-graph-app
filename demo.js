@@ -31,7 +31,7 @@ $(function () {
 
   // get exported json from cytoscape desktop via ajax
   var graphP = $.ajax({ // ayah: graphP would be the default graph, the initial one passed into the initCy function that users see when they first get to the page
-    url: 'data/aishah_53.json',
+    url: 'data/usctwidows1.cyjs',
     type: 'GET',
     dataType: 'json'
   });
@@ -744,9 +744,9 @@ function elementsetup(el) {
  function changeGraph() {
   var nargraphs = document.getElementById("dropdown-list");
   var selectednarrator = nargraphs.options[nargraphs.selectedIndex].value;
-  if (selectednarrator == "aishah_53") {
-    elementsetup(aishah.elements);
-    cy.json({ elements: aishah.elements });
+  if (selectednarrator == "usctwidows1") {
+    elementsetup(usctwidows1.elements);
+    cy.json({ elements: usctwidows1.elements });
     allNodes = cy.nodes(); //12/5/22
     allEdges = cy.edges(); //3/13/23
     allEles = cy.elements(); //12/5/22
